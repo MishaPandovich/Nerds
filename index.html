@@ -3,52 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nёrds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
-		<div class="logo page-header__logo">
-			<img class="logo__img" src="#" width="" height="">
-		</div>
-		<nav class="nav page-header__nav">
-			<ul class="nav-list">
-				<li class="nav-list__item"><a href="#">Студия</a></li>
-				<li class="nav-list__item"><a href="#">Клиенты</a></li>
-				<li class="nav-list__item"><a href="#">Магазин</a></li>
-				<li class="nav-list__item"><a href="#">Контакты</a></li>
+		<div class="flex-wrapper">
+			<div class="logo page-header__logo">
+				<img class="logo__img" src="img/nerds-logo.png" width="160" height="65">
+			</div>
+			<nav class="nav page-header__nav">
+				<ul class="nav-list">
+					<li class="nav-list__item"><a href="#">Студия</a></li>
+					<li class="nav-list__item"><a href="#">Клиенты</a></li>
+					<li class="nav-list__item"><a href="catalog.html">Магазин</a></li>
+					<li class="nav-list__item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="user-block">
+				<li class="user-block__item"><a class="basket" href="#">Корзина</a></li>
 			</ul>
-		</nav>
-		<div class="user-block">
-			<a class="basket" href="#">Корзина</a>
 		</div>
-		<div class="slide-show-container">
+		<div class="slideshow-container">
 			<div class="slide slide--one">
-				<img src="img/" width="" height="" alt="Первый слайд">
+				<img src="img/slide1.png" width="698" height="413" alt="Первый слайд">
 				<div class="slide-content">
-					<b class="slide-content__slogan">Долго, дорого, скурпулезно</b>
-					<p class="slide-content__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<b class="slide-content__slogan">Долго, дорого, скрупулезно</b>
+					<p class="slide-content__text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
 					<a class="bnt slide-content__bnt" href="#">Узнать больше</a>
 				</div>
 			</div>
-			<div class="slide slide--two">
-				<img src="img/" width="" height="" alt="Первый слайд">
+			<div class="slide slide--two fade visually-hidden">
+				<img src="img/slide2.png" width="663" height="414" alt="Второй слайд">
 				<div class="slide-content">
-					<b class="slide-content__slogan">Любим математику, как никто другой</b>
-					<p class="slide-content__text">Никакого креатива, только математические формулы для расчета идеальных пропрорций.</p>
+					<b class="slide-content__slogan">Любим математику как никто другой</b>
+					<p class="slide-content__text">Никакого креатива, только математические формулы<br> для расчета идеальных пропрорций.</p>
 					<a class="bnt slide-content__bnt" href="#">Узнать больше</a>
 				</div>
 			</div>
-			<div class="slide slide--three">
-				<img src="img/" width="" height="" alt="Первый слайд">
+			<div class="slide slide--three fade visually-hidden">
+				<img src="img/slide3.png" width="759" height="411" alt="Третий слайд">
 				<div class="slide-content">
-					<b class="slide-content__slogan">Только ночь, только хардкор</b>
-					<p class="slide-content__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<b class="slide-content__slogan">Только ночь,<br> только хардкор</b>
+					<p class="slide-content__text">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
 					<a class="bnt slide-content__bnt" href="#">Узнать больше</a>
 				</div>
 			</div>
-			<div class="toggle-dots">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
+			<div class="toggle-dots fade">
+				<span class="dot dot--active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
 			</div>
 		</div>
 	</header>
@@ -56,93 +61,103 @@
 		<section class="service page-container__service">
 			<ul class="service-list">
 				<li class="service-list__item">
-					<img src="img/" width="" height="" alt="Веб-сайты">
+					<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 					<h3 class="service-list__caption">Веб-сайты</h3>
-					<b class="service-list__caption">Мир никогда не будет прежним, после того как увидит ваш сайт!</b>
+					<b class="service-list__text">Мир никогда не будет прежним,<br> после того как увидит ваш сайт!</b>
 					<a class="bnt service-list__bnt service-list__bnt--pink" href="">Заказать</a>
 				</li>
 				<li class="service-list__item">
-					<img src="img/" width="" height="" alt="Веб-сайты">
+					<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 					<h3 class="service-list__caption">Приложения</h3>
-					<b class="service-list__caption">Покорите топ-10 приложений в AppStore и Google Play</b>
+					<b class="service-list__text">Покорите топ-10 приложений в AppStore и Google Play</b>
 					<a class="bnt service-list__bnt service-list__bnt--green" href="">Заказать</a>
 				</li>
 				<li class="service-list__item">
-					<img src="img/" width="" height="" alt="Веб-сайты">
+					<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
 					<h3 class="service-list__caption">Презентации</h3>
-					<b class="service-list__caption">Вы даже не подозреваете, насколько вы изумительны</b>
+					<b class="service-list__text">Вы даже не подозреваете,<br> насколько вы изумительны</b>
 					<a class="bnt service-list__bnt service-list__bnt--yellow" href="">Заказать</a>
 				</li>
 			</ul>
 		</section>
 		<section class="about-us">
-			<div class="about-us__column">
-				<b class="about-us__caption">Мы маленькая, но гордая студия из Кранснодара.</b>
+			<div class="about-us__column about-us__column--left">
+				<b class="about-us__caption">Мы &#8212; маленькая, но гордая<br> дизайн-студия из Краснодара.</b>
 				<p class="about-us__text">Исповедует принципы минимализма и чистоты. Ставим математический расчет превыше
 					креатива. Работаем не покладая рук, как роботы.
 				</p>
-				<p class="about-us__services">Выполняем заказы на разработку:</p>
-				<ul class="services-list">
-					<li class="services-list__item">Веб-сайтов любой сложности</li>
-					<li class="services-list__item">Мобильных приложений для IOS и Android</li>
-					<li class="services-list__item">Слайдшоу и видео для корпоративных презентации</li>
+				<p class="about-us__development">Выполняем заказы на разработку:</p>
+				<ul class="development-list">
+					<li class="development__item">Веб-сайтов любой сложности</li>
+					<li class="development__item">Мобильных приложений для IOS и Android</li>
+					<li class="development__item">Слайдшоу и видео для корпоративных презентации</li>
 				</ul>
 			</div>
-			<div class="about-us__column">
-				<img src="img/" width="" height="" alt="Nerds">
-				<table class="about-us__table" cellpadding="0" border="1" cellspacing="0">
+			<div class="about-us__column about-us__column--right">
+				<img src="img/nerds-illustration.jpg" width="360" height="208" alt="Nerds">
+				<table class="about-us__table">
 					<caption>С 2004 года любим точность во всем:</caption>
 					<tr>
-						<td>146 %</td>
-						<td>100 %</td>
-						<td>50 %</td>
+						<td class="cell-procent">146</td>
+						<td class="cell-procent">100</td>
+						<td class="cell-procent">50</td>
 					</tr>
 					<tr>
-						<td>Уровень самоотдачи</td>
-						<td>Соблюдение сроков</td>
-						<td>Минимальная предоплата</td>
+						<td class="cell-desc">Уровень самоотдачи</td>
+						<td class="cell-desc">Соблюдение сроков</td>
+						<td class="cell-desc">Минимальная предоплата</td>
 					</tr>
 				</table>
 			</div>
 		</section>
 		<section class="partners">
-			<a class="partners__link" href="#"><img src="img/" width="" height="">Htmlacademy</a>
-			<a class="partners__link" href="#"><img src="img/" width="" height="">Barbershop «Borodinski»</a>
-			<a class="partners__link" href="#"><img src="img/" width="" height="">Pink</a>
-			<a class="partners__link" href="#"><img src="img/" width="" height="">Mishka</a>
+			<a class="partners__link" href="#"><img src="img/logo-1.png copy.jpg" width="199" height="68" alt="Htmlacademy"></a>
+			<a class="partners__link partners__link--barbershop" href="#"><img src="img/logo-2.png copy.jpg" width="209" height="90" alt="Barbershop «Borodinski»"></a>
+			<a class="partners__link" href="#"><img src="img/logo-3.png copy.jpg" width="185" height="52" alt="Pink"></a>
+			<a class="partners__link" href="#"><img src="img/logo-4.png copy.jpg" width="173" height="84" alt="Mishka"></a>
 		</section>
 		<section class="map">
-			<div class="contacts map__contacts">
-				<h2 class="contacts__name-company">Nёrds desing studio</h2>
-				<p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p class="contacts__phone">тел. +7(812)275-75-75</p>
-				<button class="bnt contacts__bnt">Напишите нам!</button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5652.8529898137085!2d30.319672340616208!3d59.939022546516966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1532708862866" width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="map-container">
+				<div class="contacts map__contacts">
+					<h2 class="contacts__name-company">Nёrds desing studio</h2>
+					<p class="contacts__address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+					<p class="contacts__phone">тел. +7(812)275-75-75</p>
+					<button class="bnt contacts__bnt">Напишите нам!</button>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="social page-footer__social">
-			<a class="bnt social__bnt social__bnt--vk" href="#">В контакте</a>
-			<a class="bnt social__bnt social__bnt--fb" href="#">Facebook</a>
-			<a class="bnt social__bnt social__bnt--inst" href="#">Instagramm</a>
+			<a class="bnt social__bnt social__bnt--vk" href="#"><span class="visualy-hidden">В контакте</span></a>
+			<a class="bnt social__bnt social__bnt--fb" href="#"><span class="visualy-hidden">Facebook</span></a>
+			<a class="bnt social__bnt social__bnt--inst" href="#"><span class="visualy-hidden">Instagramm</span></a>
 		</div>
 		<p class="text page-footer__text">
 			<b>Давайте дружить, это выгодно!</b>
 			Скидка 10% для друзей из социальных сетей.	
 		</p>
 	</footer>
-<!--<section class="modal-map">
+	<section class="modal-map">
     	<p class="modal-map__caption">Напишите нам!</p>
     	<form class="form-modal-map" action="" method="post">
-    		<label for="name">Ваше имя:</label>
-    		<input id="name" type="text" name="name" placeholder="Представтесь, пожалуйста">
-			<label for="e-mail">Ваш e-mail:</label>
-    		<input id="e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
-    		<label for="text">Ваш e-mail:</label>
-    		<textarea id="text" name="text">В свободной форме</textarea>
+    		<div class="form-container">
+    			<div>
+		    		<label for="name">Ваше имя:</label><br>
+		    		<input id="name" type="text" name="name" placeholder="Представтесь, пожалуйста">
+	    		</div>
+	    		<div>
+					<label for="e-mail">Ваш e-mail:</label><br>
+		    		<input id="e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
+	    		</div>
+    		</div>
+    		<label class="form-modal-textarea" for="text">Текст письма:</label><br>
+    		<textarea class="form-modal-textarea" id="text" name="text">В свободной форме</textarea>
     		<button class="bnt modal-map__bnt" type="submit">Отправить</button>
     	</form>
-    	<button class="modal-close" type="button">Закрыть модальное окно карты</button>
-	</section>-->
+    	<button class="modal-close" type="button"><span>Закрыть модальное окно карты</span></button>
+	</section>
+	<script type="text/javascript" src="js/modal-form.js"></script>
 </body>
 </html>
